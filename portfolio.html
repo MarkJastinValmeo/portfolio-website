@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MJ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about">
+      <!--container 1-->
+      <div
+        class="container mb-5 d-flex justify-content-center align-items-center vh-100"
+      >
+        <div class="card border-0 mb-5">
+          <div class="row g-0">
+            <div class="col-md-4" data-aos="fade-right">
+              <img src="image/me.png" class="img-fluid rounded" alt="me" />
+            </div>
+            <div class="col-md-8" data-aos="fade-left">
+              <div class="card-body">
+                <div>
+                  <h5>Hello, I'm</h5>
+                  <h1>Mark Jastin I. Valmeo</h1>
+                  <h5 id="degree"></h5>
+
+                  <p>
+                    A motivated and adaptable professional seeking opportunities
+                    to learn, grow, and gain valuable experience. Quick learner
+                    with strong problem-solving skills, attention to detail, and
+                    a commitment to delivering quality results.
+                  </p>
+                  <a class="btn btn-outline-dark" href="files/Resume.pdf"
+                    >View Resume</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#contactModal"
+                  >
+                    Get in Touch
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contactModalLabel">
+              Get in Touch
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="10"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <div class="mb-3 text-end">
+              <button type="submit" class="btn btn-dark" onclick="sendMail()">
+                <i class="fa-solid fa-paper-plane"></i> Send
+              </button>
+            </div>
+            <a href="https://web.facebook.com/mj.imbienvalmeo"
+              ><i class="fa-brands fa-facebook fa-lg"></i
+            ></a>
+            <a href="https://www.instagram.com/markjastinvalmeo/"
+              ><i class="fa-brands fa-square-instagram fa-lg"></i
+            ></a>
+            <a href="mailto:markjastinvalmeo02@gmail.com">
+              <i class="fa-solid fa-envelope fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="skills">
+      <!--container 2-->
+      <div class="container mb-5">
+        <h1 class="text-center mb-4" data-aos="fade-up">
+          <i class="fa-solid fa-screwdriver-wrench"></i>Skills & Technologies
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Builds and designs interactive web interfaces using modern web
+          technologies, focusing on responsive layouts, cross-browser
+          compatibility, performance optimization, and intuitive user experience
+          to ensure visually engaging and functional websites across desktop and
+          mobile devices.
+        </p>
+        <div class="row g-3">
+          <div class="col-sm-4 mb-sm-0" data-aos="zoom-in">
+            <div class="card border-2">
+              <div class="card-body">
+                <h5 class="card-title">FRONTEND</h5>
+                <p class="card-text">
+                  HTML5, CSS3, JavaScript, Bootstrap, Tailwind - creates
+                  visually appealing, responsive, and user-friendly web
+                  interfaces. <br />
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-bootstrap"></i>
+                  <i class="devicon-tailwindcss-original"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="card border-2">
+              <div class="card-body">
+                <h5 class="card-title">BACKEND</h5>
+                <p class="card-text">
+                  PHP, JAVA, MySQL, MS SQL, Firebase - handle server logic,
+                  application processing, and data storage in systems. <br />
+                  <i class="fa-brands fa-php"></i>
+                  <i class="fa-brands fa-java"></i>
+                  <i class="fa-solid fa-database"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card border-2">
+              <div class="card-body">
+                <h5 class="card-title">OTHERS</h5>
+                <p class="card-text">
+                  Microsoft Office Tools - Word, Powerpoint, Excel, Access Etc.
+                  <br />
+                  <i class="fa-brands fa-microsoft"></i><br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <!--container 3-->
+      <div class="container">
+        <h1 class="text-center mb-4" data-aos="fade-up">
+          <i class="fa-solid fa-rocket"></i>Projects
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          ALERT (Agriculturist Licensure Examination Review Tool) is an app that
+          helps students of Bulacan Agricultural State College review for their
+          licensure exam. It has quizzes, practice tests, and study materials
+          made by licensed professors to make studying easier and more
+          organized.
+        </p>
+        <div class="card border-2" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-header border-2 text-center">
+            ALERT: Agriculturist Licensure Examination Review Tool
+          </div>
+          <div class="card-body">
+            <img
+              class="img-fluid"
+              src="image/alert_system.png"
+              alt="alert_system"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="btn btn-dark" id="chatBotButton">
+      <i class="fa-solid fa-robot"></i> Ask Questions
+    </button>
+
+    <div id="chatWindow" class="chat-container d-none">
+      <div
+        class="chat-header bg-dark text-white p-3 d-flex justify-content-between align-items-center"
+      >
+        <span><i class="fa-solid fa-robot"></i> MJ Assistant</span>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          id="closeChat"
+        ></button>
+      </div>
+      <div id="chatBody" class="chat-body p-3">
+        <div class="bot-msg">Hi! I'm MJ's assistant. What brings you here?</div>
+      </div>
+      <div class="chat-footer p-2 border-top">
+        <div class="input-group">
+          <input
+            type="text"
+            id="userInput"
+            class="form-control"
+            placeholder="Type a message..."
+          />
+          <button class="btn btn-dark" id="sendMessage">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container text-center p-3">
+        &copy; 2026 Mark Jastin I. Valmeo. All right reserved.
+      </div>
+    </footer>
+  </body>
+</html>
