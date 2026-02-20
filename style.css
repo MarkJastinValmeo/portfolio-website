@@ -149,3 +149,13 @@ html {
   align-self: flex-end;
   margin-left: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section, footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
